@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "name": "Smart Watch Pro",
+        "img": "https://images.openai.com/static-rsc-1/JR7gzJFpy_jrXCIhYG_kwItweFRlGnu0_XTHq1yLybGn4_zDx0_m8_9NCwSKBYTaH6sil0Mss3DwLe5gif5UpbR8_PV018t00IoZZfElgWu0fhbvjmX5GZFwjQssUwgg6cwAvSueOSWi2tALeKwhkQ",
+        "Des": "A premium smartwatch with heart rate monitor, step counter, and long-lasting 7-day battery life.",
+        "price": 129.99,
+        "category": "electronics",
+        "isFeature": true
+    },
+    {
+        "id": 2,
+        "name": "Wireless Earbuds X",
+        "img": "https://images.openai.com/static-rsc-1/3I1FTyLp9qxnH_a1HQRts0CwIigAAs2fBA0hsabvkI-64W8g3gR1mXUWdaPYJQoE-1aAsqzne3flWjwQtoPCPg6vvZvuCFB9A_WFBhQiiyGYyxTxxPE3jLyWE9WK9rHSJTB-IugsDuS9jtgaaKrugQ",
+        "Des": "Compact true wireless earbuds with clear call quality and smart touch control.",
+        "price": 59.5,
+        "category": "electronics",
+        "isFeature": false
+    },
+    {
+        "id": 3,
+        "name": "Leather Laptop Bag",
+        "img": "https://images.openai.com/static-rsc-1/aTQX8XUGBwPNg0Fd3UigpwAVbgDg4bO2KvNYcf1xsMZ6ye6XreJf7mGk2q2s-wwaFT18mMfzENdgBPq1MFB2s_sJPCG2mRRnAS9XG_h6Un1B5asz5_8gFkaulBNTHefDfqjWwPzlltZlGH_ZKOjvWA",
+        "Des": "Stylish leather bag perfect for freelancers and office use, fits laptops up to 15.6 inches.",
+        "price": 49.0,
+        "category": "accessories",
+        "isFeature": false
+    },
+    {
+        "id": 4,
+        "name": "4K Smart LED TV 43\"",
+        "img": "https://images.openai.com/static-rsc-1/5-xxaLObHqfbozL7giUaRS0Vc-wqMqL_9Sw64OBo3BRokfPd26-s8YvRWGi_mDWVD_20d8C1_LzDewe0AfWCbwLtv2Z060uF2WpQtv3ralMp6BbYnJmYKtZFeRbxPiu-q_aDRJiAg0TEJeSXXVNtzg",
+        "Des": "Android smart TV with HDR support and built-in streaming apps for ultimate entertainment.",
+        "price": 339.99,
+        "category": "electronics",
+        "isFeature": true
+    },
+    {
+        "id": 5,
+        "name": "Running Shoes Glide",
+        "img": "https://images.openai.com/static-rsc-1/3-xxaLObHqfbozL7giUaRS0Vc-wqMqL_9Sw64OBo3BRokfPd26-s8YvRWGi_mDWVD_20d8C1_LzDewe0AfWCbwLtv2Z060uF2WpQtv3ralMp6BbYnJmYKtZFeRbxPiu-q_aDRJiAg0TEJeSXXVNtzg",
+        "Des": "Lightweight running shoes with shock-absorbing sole for maximum comfort and performance.",
+        "price": 74.25,
+        "category": "fashion",
+        "isFeature": false
+    },
+    {
+        "id": 6,
+        "name": "Ceramic Coffee Mug Set",
+        "img": "https://images.openai.com/static-rsc-1/5-xxaLObHqfbozL7giUaRS0Vc-wqMqL_9Sw64OBo3BRokfPd26-s8YvRWGi_mDWVD_20d8C1_LzDewe0AfWCbwLtv2Z060uF2WpQtv3ralMp6BbYnJmYKtZFeRbxPiu-q_aDRJiAg0TEJeSXXVNtzg",
+        "Des": "Set of 4 ceramic coffee mugs — microwave and dishwasher safe.",
+        "price": 22.0,
+        "category": "home",
+        "isFeature": false
+    },
+    {
+        "id": 7,
+        "name": "Bluetooth Speaker Mini",
+        "img": "https://images.openai.com/static-rsc-1/5-xxaLObHqfbozL7giUaRS0Vc-wqMqL_9Sw64OBo3BRokfPd26-s8YvRWGi_mDWVD_20d8C1_LzDewe0AfWCbwLtv2Z060uF2WpQtv3ralMp6BbYnJmYKtZFeRbxPiu-q_aDRJiAg0TEJeSXXVNtzg",
+        "Des": "Compact portable Bluetooth speaker with 10-hour playback and water-resistant design.",
+        "price": 34.99,
+        "category": "electronics",
+        "isFeature": true
+    },
+    {
+        "id": 8,
+        "name": "Fitness Tracker Band",
+        "img": "https://images.openai.com/static-rsc-1/5-xxaLObHqfbozL7giUaRS0Vc-wqMqL_9Sw64OBo3BRokfPd26-s8YvRWGi_mDWVD_20d8C1_LzDewe0AfWCbwLtv2Z060uF2WpQtv3ralMp6BbYnJmYKtZFeRbxPiu-q_aDRJiAg0TEJeSXXVNtzg",
+        "Des": "Slim fitness tracker band with sleep tracking, step counter, and calorie monitor.",
+        "price": 29.0,
+        "category": "fitness",
+        "isFeature": false
+    },
+    {
+        "id": 9,
+        "name": "Minimalist Desk Lamp",
+        "img": "https://images.openai.com/static-rsc-1/5-xxaLObHqfbozL7giUaRS0Vc-wqMqL_9Sw64OBo3BRokfPd26-s8YvRWGi_mDWVD_20d8C1_LzDewe0AfWCbwLtv2Z060uF2WpQtv3ralMp6BbYnJmYKtZFeRbxPiu-q_aDRJiAg0TEJeSXXVNtzg",
+        "Des": "Modern desk lamp with adjustable arm and touch control brightness.",
+        "price": 39.9,
+        "category": "home",
+        "isFeature": false
+    },
+    {
+        "id": 10,
+        "name": "Travel Backpack 30L",
+        "img": "https://images.openai.com/static-rsc-1/5-xxaLObHqfbozL7giUaRS0Vc-wqMqL_9Sw64OBo3BRokfPd26-s8YvRWGi_mDWVD_20d8C1_LzDewe0AfWCbwLtv2Z060uF2WpQtv3ralMp6BbYnJmYKtZFeRbxPiu-q_aDRJiAg0TEJeSXXVNtzg",
+        "Des": "Durable 30L travel backpack with laptop compartment and rain cover included.",
+        "price": 65.0,
+        "category": "accessories",
+        "isFeature": true
+    }
+]
