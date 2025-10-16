@@ -3,7 +3,7 @@
 const Navber = () => {
     return (
         <div className='bg-slate-200'>
-            <div className='flex justify-between items-center container mx-auto py-5 px-2 '>
+            <div className='flex justify-between items-center container mx-auto p-5 '>
                 <div className="text-3xl font-semibold">
                     <h2>Logo</h2>
                 </div>
