@@ -27,20 +27,35 @@ function App() {
     }
   }
   
+ 
 
-
-  // Duplicate item remove
+  // card item add and duplicate remove function
   const [cartItem, setCartItem] = useState([]);
   const handleDuplicatRemove = (product) => {
     const exists = cartItem.find(item => item.id === product.id);
-    if(!exists){
-      setCartItem([...cartItem, product]);
-      Swal.fire("Product added to cart successfully");
+
+    if(exists){
+      const updateCart = cartItem.map(item => {
+        if(item.id === product.id){
+          return {...item, quantity: item.quantity + 1};
+        }
+        return item;
+      })
+      setCartItem(updateCart);
+      Swal.fire("Product quantity updated in cart successfully");
     }
     else{
-      Swal.fire("Cart is already added this product");
-      
-    }
+      const newProduct = {...product, quantity: 1};
+      setCartItem([...cartItem, newProduct]);
+      Swal.fire("Product added to cart successfully");
+    } 
+  }
+
+  // Delete item from cart
+  const handleDeleteItem = (id) => {
+    const updatedCart = cartItem.filter(item => item.id !== id);
+    setCartItem(updatedCart);
+    Swal.fire("Product removed from cart");
   }
   return (
     <>
@@ -48,7 +63,7 @@ function App() {
 
       <div className='flex  justify-around mt-12'>
         <AllProduct handleDuplicatRemove={handleDuplicatRemove} ></AllProduct>
-        <CartContainers isActive={isActive} handleIsActiveStstues={handleIsActiveStstues} selectedProducts={cartItem}></CartContainers>
+        <CartContainers handleDeleteItem={handleDeleteItem} isActive={isActive} handleIsActiveStstues={handleIsActiveStstues} selectedProducts={cartItem}></CartContainers>
       </div>
      
       

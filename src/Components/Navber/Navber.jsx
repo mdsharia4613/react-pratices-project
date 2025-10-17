@@ -7,6 +7,9 @@ const Navber = () => {
                 <div className="text-3xl font-semibold">
                     <h2>Logo</h2>
                 </div>
+                <div>
+                    <button type="button">$</button>
+                </div>
                 <div className="flex gap-4 ">
                     <a href="">Home</a>
                     <a href="">Product</a>

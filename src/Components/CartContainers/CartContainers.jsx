@@ -1,7 +1,7 @@
 import './CartContainer.css'
 import About from '../About/About'
 import Cart from '../Cart/Cart'
-const CartContainers = ({ handleIsActiveStstues, isActive, selectedProducts }) => {
+const CartContainers = ({ handleIsActiveStstues, isActive, handleDeleteItem, selectedProducts, }) => {
     return (
         <div>
             <h2 className='text-3xl'>Cart Items</h2>
@@ -23,7 +23,7 @@ const CartContainers = ({ handleIsActiveStstues, isActive, selectedProducts }) =
             </div>
 
             {/* Cart বা About দেখাবে status অনুযায়ী */}
-            {isActive.status === 'cart' ? <Cart selectedProducts={selectedProducts} /> : <About />}
+            {isActive.status === 'cart' ? <Cart handleDeleteItem={handleDeleteItem} selectedProducts={selectedProducts} /> : <About />}
         </div>
     )
 }
