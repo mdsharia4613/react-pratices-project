@@ -7,6 +7,9 @@ import Navber from './Components/Navber/Navber'
 import Swal from 'sweetalert2'
 
 function App() {
+
+  
+
   const [isActive, setIsActive] = useState({
     cart: true,
     status: 'cart'
@@ -34,6 +37,7 @@ function App() {
   const handleDuplicatRemove = (product) => {
     const exists = cartItem.find(item => item.id === product.id);
 
+
     if(exists){
       const updateCart = cartItem.map(item => {
         if(item.id === product.id){
@@ -42,24 +46,46 @@ function App() {
         return item;
       })
       setCartItem(updateCart);
+
+      // 🔽 প্রতিবার quantity বাড়লে amount থেকে price বিয়োগ হবে
+      setAmount(prevAmount => prevAmount + product.price);
       Swal.fire("Product quantity updated in cart successfully");
+
     }
     else{
       const newProduct = {...product, quantity: 1};
       setCartItem([...cartItem, newProduct]);
+
+      // 🔽 প্রতিবার quantity বাড়লে amount থেকে price বিয়োগ হবে
+    setAmount(prevAmount => prevAmount - product.price);
       Swal.fire("Product added to cart successfully");
     } 
   }
 
   // Delete item from cart
   const handleDeleteItem = (id) => {
+    const deletedItem = cartItem.find(item => item.id === id);
+    if (deletedItem) {
+      const totalPrice = deletedItem.price * deletedItem.quantity;
+      setAmount(prevAmount => prevAmount + totalPrice);
+    }
+
     const updatedCart = cartItem.filter(item => item.id !== id);
     setCartItem(updatedCart);
     Swal.fire("Product removed from cart");
+  };
+
+
+  // Navber state manegment
+  const [amount, setAmount] = useState(0);
+  const handleAddCoin = () => {
+    setAmount(amount + 500);
+
   }
+
   return (
     <>
-      <Navber></Navber>
+      <Navber handleAddCoin={handleAddCoin} amount={amount}></Navber>
 
       <div className='flex  justify-around mt-12'>
         <AllProduct handleDuplicatRemove={handleDuplicatRemove} ></AllProduct>

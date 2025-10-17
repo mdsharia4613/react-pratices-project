@@ -1,6 +1,7 @@
 
 
-const Navber = () => {
+const Navber = ({ handleAddCoin, amount }) => {
+    
     return (
         <div className='bg-slate-200'>
             <div className='flex justify-between items-center container mx-auto p-5 '>
@@ -8,13 +9,13 @@ const Navber = () => {
                     <h2>Logo</h2>
                 </div>
                 <div>
-                    <button type="button">$</button>
+                    <button onClick={() => handleAddCoin()} className="bg-purple-600 px-8 py-1 rounded-xl" type="button">Amount $</button>
                 </div>
                 <div className="flex gap-4 ">
                     <a href="">Home</a>
                     <a href="">Product</a>
                     <a href="">card 1</a>
-                    <p>$ 5.00</p>
+                    <button className="bg-purple-600 px-8 py-1 rounded-xl" type="button">$ {amount}</button>
                 </div>
             </div>
         </div>

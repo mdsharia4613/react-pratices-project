@@ -1,6 +1,6 @@
 
 
-const SingalProduct = ({ product, handleDuplicatRemove }) => {
+const       SingalProduct = ({ product, handleDuplicatRemove }) => {
     const { img, name, des, price} = product ;
     return (
         <div className='border  p-4 text-center m-4 shadow-xl shadow-gray-600 rounded-lg'>
